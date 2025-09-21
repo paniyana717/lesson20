@@ -1,0 +1,400 @@
+{
+  "id": "f54dc7a5-53fc-49d6-81b3-5681298d8993",
+  "version": "2.0",
+  "name": "Lesson 25",
+  "url": "https://automationexercise.com/",
+  "tests": [{
+    "id": "91bd490f-eb0e-4103-9ee8-f72a6fc10c43",
+    "name": "Test 1 Signup",
+    "commands": [{
+      "id": "454eeb67-cb59-4561-814f-96bda2ba9b9d",
+      "comment": "",
+      "command": "open",
+      "target": "https://automationexercise.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b87a7902-8e35-4df5-b755-d02574c77e6e",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//header[@id='header']/div/div/div/div/div/a/img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[@alt='Website for automation practice']", "xpath:img"],
+        ["xpath=//header[@id='header']/div/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "7e2139e5-2aad-4653-bbe6-2ff6a81ba8f5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Signup / Login",
+      "targets": [
+        ["linkText=Signup / Login", "linkText"],
+        ["css=.navbar-nav > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Signup / Login')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div/div/div[2]/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Signup / Login')]", "xpath:innerText"]
+      ],
+      "value": "Signup / Login"
+    }, {
+      "id": "a562b04e-3570-4305-9dec-40fe558c8b7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Signup / Login",
+      "targets": [
+        ["linkText=Signup / Login", "linkText"],
+        ["css=.navbar-nav > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Signup / Login')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div/div/div[2]/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Signup / Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee4a07de-834c-4f12-a4a7-d35e399f2ef1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.signup-form",
+      "targets": [
+        ["css=.signup-form", "css:finder"],
+        ["xpath=//section[@id='form']/div/div/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "45dc694c-c822-40e9-9a74-b94a721e6422",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.signup-form input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//section[@id='form']/div/div/div[3]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": "Name"
+    }, {
+      "id": "df4b4211-2c3a-448e-b4f2-57b09a3791c9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.signup-form input:nth-child(3)",
+      "targets": [
+        ["css=.signup-form input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='email'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='form']/div/div/div[3]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/input[3]", "xpath:position"]
+      ],
+      "value": "Email Address"
+    }, {
+      "id": "177660da-f4e2-4aac-9422-eb8aff1acb38",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='form']/div/div/div[3]/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Signup')]", "xpath:innerText"]
+      ],
+      "value": "Signup"
+    }, {
+      "id": "3ea35141-3a10-4590-b850-60419174ce27",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.login-form input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//section[@id='form']/div/div/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Email Address"
+    }, {
+      "id": "870661ef-7219-427b-b769-ff480074ae5d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.login-form input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//section[@id='form']/div/div/div/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Password"
+    }, {
+      "id": "868a6528-5bed-417f-9d9b-8cf9c9af6b82",
+      "comment": "",
+      "command": "store",
+      "target": "test@test.com",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "51c10bd8-2755-438e-8953-46710b1a0859",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//section[@id='form']/div/div/div[3]/div/form/input[3]",
+      "targets": [
+        ["css=.signup-form input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='email'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='form']/div/div/div[3]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/input[3]", "xpath:position"]
+      ],
+      "value": "${email}"
+    }]
+  }, {
+    "id": "dc1f5b67-264e-4606-a9a3-753a4fa87b90",
+    "name": "Test 2 Contact us",
+    "commands": [{
+      "id": "a87ca173-0c46-40c6-b0e5-4377dd2cad54",
+      "comment": "",
+      "command": "open",
+      "target": "https://automationexercise.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2caa2179-4214-4931-9cba-81bf8cfd356b",
+      "comment": "",
+      "command": "open",
+      "target": "https://automationexercise.com/contact_us",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "713015d5-48d5-4d95-b5fe-905cdf0d3ca9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='contact-page']/div/div/div/h2",
+      "targets": [
+        ["css=.col-sm-12 > .title", "css:finder"],
+        ["xpath=//div[@id='contact-page']/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "CONTACT US"
+    }, {
+      "id": "a911b958-06f8-4aeb-afbd-e9d0d23dd12d",
+      "comment": "",
+      "command": "store",
+      "target": "Yana",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "f49572cf-c705-48d5-8124-8b0f57f2ed2c",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-us-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${name}"
+    }, {
+      "id": "1deb3a93-d8f5-4dba-a35f-ec90222aa31d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-us-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bc68aac-4c30-4ca9-bd3c-4d2611aa32ee",
+      "comment": "",
+      "command": "store",
+      "target": "test@test",
+      "targets": [],
+      "value": "Email"
+    }, {
+      "id": "f2c30e3c-8f2d-4f1c-a4cc-5932059c30ed",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-us-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${email}"
+    }, {
+      "id": "02960e2f-a85d-40ff-b17a-1bde9471cbad",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=message", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-us-form']/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76650478-4cd1-444c-bd99-e9f992c9f2bd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-us-form']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66c4154a-5199-48e9-b6e1-70aff17c2b35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-us-form']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "74155ea2-4280-4d47-86d6-2ef77dfae261",
+    "name": "Test 3 Products",
+    "commands": [{
+      "id": "27ae9e6e-585a-473a-a204-563997ccbcef",
+      "comment": "",
+      "command": "open",
+      "target": "https://automationexercise.com/products",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2af564c7-1174-494d-9102-871c3ba92425",
+      "comment": "",
+      "command": "store",
+      "target": "Blue Top",
+      "targets": [],
+      "value": "product"
+    }, {
+      "id": "5567ac56-f66e-4764-aab3-c9e2ca370d44",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_product",
+      "targets": [
+        ["id=search_product", "id"],
+        ["name=search", "name"],
+        ["css=#search_product", "css:finder"],
+        ["xpath=//input[@id='search_product']", "xpath:attributes"],
+        ["xpath=//section[@id='advertisement']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${product}"
+    }, {
+      "id": "38166e52-bf82-4687-8974-d529717d7d0f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@id='submit_search']",
+      "targets": [
+        ["id=submit_search", "id"],
+        ["css=#submit_search", "css:finder"],
+        ["xpath=//button[@id='submit_search']", "xpath:attributes"],
+        ["xpath=//section[@id='advertisement']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26f02c57-d9c8-4f40-935f-cbf3afbd7d6d",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.add-to-cart:nth-child(3)",
+      "targets": [
+        ["css=.add-to-cart:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Add to cart')])[2]", "xpath:link"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "ae202d53-d95c-48a3-88e7-8c22cced9262",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Product",
+      "targets": [
+        ["linkText=View Product", "linkText"],
+        ["css=.nav-justified a", "css:finder"],
+        ["xpath=//a[contains(text(),'View Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/product_details/1')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d48e2c9b-58a5-44ec-ac04-2fe6eff26c14",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h2:nth-child(2)",
+      "targets": [
+        ["css=h2:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Blue Top')]", "xpath:innerText"]
+      ],
+      "value": "Blue Top"
+    }, {
+      "id": "31d8efe3-fc91-410a-b9c8-115f6612fa79",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//button[@type='button']",
+      "targets": [
+        ["css=.cart", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fc5bab4-7e67-4d44-b9ba-1e70c09fd4eb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.cart",
+      "targets": [
+        ["css=.cart", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//span/button", "xpath:position"]
+      ],
+      "value": "Add to cart"
+    }, {
+      "id": "595ec141-7c1c-4a82-a803-1e84dc462429",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart",
+      "targets": [
+        ["css=.cart", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//span/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "71021415-b38d-4cb5-a8a8-911461786944",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["91bd490f-eb0e-4103-9ee8-f72a6fc10c43"]
+  }],
+  "urls": ["https://automationexercise.com/"],
+  "plugins": []
+}
